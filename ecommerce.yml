@@ -8,7 +8,8 @@ keys:
   password:
     # 64 bytes (512 bits) -> base64
     secret: MnI1dTh4L0E/RChHK0tiUGVTaFZtWXEzdDZ2OXkkQiZFKUhATWNRZlRqV25acjR1N3gheiVDKkYtSmFOZFJnVQ==
-    iteration-count: 600000
+    # iteration-count: 600000
+    iteration-count: 1000
     salt-length: 64
 
 gateway:
