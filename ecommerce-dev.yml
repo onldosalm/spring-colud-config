@@ -1,13 +1,19 @@
 keys:
   security:
     # 64 bytes (512 bits) -> base64
-    secret: OCQpQ15DYVZ7ViVQd1IneEMkfUE2VUMiQWtoSERxbiUuank2YnhwNi5lZGd6NitoIiRtJnR3Tlg5bXBqVWo6WA==
-    # seconds
+    # base64(hash512(cloud_ecommerce_dev_security_secret))
+    # https://www.atatus.com/tools/sha512-to-hash
+    # https://www.atatus.com/tools/hex-to-base64
+    secret: N/0n/mppnwmQZMQQme8B+Zn8SBJnoKeZaqDcwVM1v2DjbxwYPHcpEgnMj8NAdas2G0vHqmcL0Q2eU/Mc1/SwyA==
+    # minutes
     access_expiration_time: 60
     refresh_expiration_time: 60 * 24 * 30
   password:
     # 64 bytes (512 bits) -> base64
-    secret: MnI1dTh4L0E/RChHK0tiUGVTaFZtWXEzdDZ2OXkkQiZFKUhATWNRZlRqV25acjR1N3gheiVDKkYtSmFOZFJnVQ==
+    # base64(hash512(cloud_ecommerce_dev_password_secret))
+    # https://www.atatus.com/tools/sha512-to-hash
+    # https://www.atatus.com/tools/hex-to-base64
+    secret: 7wfCmz15078kBtlZd3NVlOGrxEKtaxOtnpkpbMgeZfpVfYXoO+DPXhkAs2conRhU+3fyxNCSgD5gWMtnQtmekw==
     # iteration-count: 600000
     iteration-count: 5000
     salt-length: 64
