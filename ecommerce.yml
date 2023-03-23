@@ -19,4 +19,4 @@ keys:
     salt-length: 64
 
 gateway:
-    ip: 127.0.0.1
+    ip: 172.172.0.2
