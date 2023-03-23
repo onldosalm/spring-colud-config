@@ -1,21 +1,51 @@
+# spring:
+#   datasource:
+#     hikari:
+#       driver-class-name: "org.h2.Driver"
+#       jdbc-url: "jdbc:h2:mem:testdb"
+#       username: "{cipher}AgAO/8EwqS+87EMNKVfCnVONDopPRdD4czeUSMjHTLpd5JQ4oe7ntVdApMMGHOg00EERKF4zmkQhk/UrIdxqwozAda/YxkbVoiBxPYzrBFO9p+nyxVQBXaFKNuz2pq5HqTIpJMJBLAf7kyjE8hYxSXsgYa7x5xuxviEUAxOTr78czl9ykD6limiCvOllswn4u0GjYMeCsi6LCmsZ5uTJCOhQq9FA3EQst5cLBjvA1kIm8ctSbEXuXtnlXxtPu/CrociHRs/Mlf2/FnNoT8EkZdEyieSh4F05Lg8v2+qQjMWqkImP3on2esGt7L3Oa1ylJZWCmKS28Tnaku9/ubIYrRiqFk4H3WZRFSmulK1/fVKAuI9ubEQ4kjP8xadaWVQzmTfWwbyeWnX0yvOiN5gv+f8gfjR4mGwA72gBHYyt+XdGpT02HtConbr+S0I0qjIMhzF6YrJqOTEfvfF+bcmi0VXsA1k75j0mUIOtGD9EafWRhNxqtsUr3gwpWWiERi9zmcGWruZzUNK3VjHzHNyKiK/jEi3eEljIDvf4AbluwVwksxbZLSS7YrUUVTxNfQ4jGEUNWxlktmsETcmPsZpYNfezXyuMkZIJEx1QOijCB2UbqF8RIvUXFtFG1A9WaoQvqiNxPdbfltEX9Abf7F9TL6wcCcaijBuL02u3QpeIGl8kiwX7EMpKGqPPN9K2vqPoYzQR9tLEirEnhjjsmw9nhOfV"
+#       password: "{cipher}AgBu99X8x7pDUY5gV+7bX4jNyiirFVBQnwuAcG4BNRHzL1eJhY2NWcOk4vVgYqP3EogZoMTDeOnyCeqJOE7G6GQFHE6HyKMMi53HKP9KVi1HZmH/8RiIt+ALfEKQwoz1dyLrWAKhmB7PkMzxy8pg7nBvWWDUmVgQqkGSOXa+6rVQTgfkoFxiMkXQfOfTr3vXiUY1QJIl4wT46f596sTwGQFsvMLswXPaCY6kbBSFpXeyx/AW8JJxKkMGcVVsm7ffg10YU/Ri/AmNWf216rbKOYVA1x0QNUkgFxvZY4HOa/2tg98R4uGbqfgLC5MFYz5rPJRTJ77Uhp4vE2mPXvOlpjZxIb/jCl2q1o9F694k5kWHN7pX6BCJzpq8NXmgQJb2eDD89juyP3AKzyRTM3SdvISKatc/IaVn6ygE92zDUmrzY+iu4JWNfFxSYhMVYXwI0bp6Ed1bdBq5Hm4vpIZpl2ox1yhpxDLX/eXSfpM0FBYf2h3BbNGAm8TAz87v/AkIcktntZirU3TunTFYahxX4AgLil98c2nh/RWhy5P6woFfUSrq8he6KfcJiNAH0KCRMp1+/rez+LjP5qxoau0R+f3lNeHqKjoUVhosNIM3R5STKPC5xHJKJVW+KogkT2CfJU5xLlipuefQhk+hU5h5f0tP0Qy8C/mD2Tvsjx+NtS2A24qeox9eCvc2VlgnD2FyKVkanQAOqVwN6/U89LbdIAzm"
+
+spring:
+  datasource:
+    hikari:
+      driver-class-name: "org.mariadb.jdbc.Driver"
+      jdbc-url: "jdbc:mariadb://localhost:33306/ecommerce"
+      username: "{cipher}AgCGS/vLBmEYSkHEmC3OzF5NXYISPlI7xtOXK5ueG5Xkew1mk0gaF4H+noQidFmEesc3RzSaKlFW1GdQGJVXQkA2abENGundi0ToCZnuwkK7ctuZex86lZpkCKp2mZ8qrxGkW3671+vPf75M4O/1/lkhZEPyD3x/GJKj0yTuYD+KQYQ0pvPe9n7jS7G6XEhx3PsNqwGDUkbg+zYH1AqRN9eoES9gA+I7jXC1YxaQvvRXX50F8ULXUkLFVnhrchb5Eu7npiURLySYxqcimrtG1AN0yTe190zPejFNK3IKIcPc+xo7DiEg/MHa0nPJ2M5tlyfmkdeo8MDWGjCtN6+dY4E6zOizHX/+1OHiWJz9uaC68if9aa8xXprkaAsFJLziguO9n+VnWteNCLu0KIiDT+U5Tv4kA/UD4DCQS3tEn8Um5KNsVmRaCta1YUPOnqSgTV1V8SzKLvEMbc+a/9UPG4nXix/aUnqD0vT7kpTCUsC5pJJIEqNXqoKOUAzESsFifTEqBN8CviahPZGEcqs6ZiEXFMTbJwPR5QlZZ7sdPUpg55C5gvrQdTfoCyjyHN7VRirSXoilJteuUFJIzG9haTMG3hgP5ra5KpUB0wedpr+UlHl0LZDLjRYyM/Cv1bu4VE4zOwsw0JpAPIAGamgR7bsmRe87PBqPqP8UPju2QV0dbi2OFfe8hrR+hjQ5yCYgtjc5VzqUX60sDTTlaLuVYbI6"
+      password: "{cipher}AgBu99X8x7pDUY5gV+7bX4jNyiirFVBQnwuAcG4BNRHzL1eJhY2NWcOk4vVgYqP3EogZoMTDeOnyCeqJOE7G6GQFHE6HyKMMi53HKP9KVi1HZmH/8RiIt+ALfEKQwoz1dyLrWAKhmB7PkMzxy8pg7nBvWWDUmVgQqkGSOXa+6rVQTgfkoFxiMkXQfOfTr3vXiUY1QJIl4wT46f596sTwGQFsvMLswXPaCY6kbBSFpXeyx/AW8JJxKkMGcVVsm7ffg10YU/Ri/AmNWf216rbKOYVA1x0QNUkgFxvZY4HOa/2tg98R4uGbqfgLC5MFYz5rPJRTJ77Uhp4vE2mPXvOlpjZxIb/jCl2q1o9F694k5kWHN7pX6BCJzpq8NXmgQJb2eDD89juyP3AKzyRTM3SdvISKatc/IaVn6ygE92zDUmrzY+iu4JWNfFxSYhMVYXwI0bp6Ed1bdBq5Hm4vpIZpl2ox1yhpxDLX/eXSfpM0FBYf2h3BbNGAm8TAz87v/AkIcktntZirU3TunTFYahxX4AgLil98c2nh/RWhy5P6woFfUSrq8he6KfcJiNAH0KCRMp1+/rez+LjP5qxoau0R+f3lNeHqKjoUVhosNIM3R5STKPC5xHJKJVW+KogkT2CfJU5xLlipuefQhk+hU5h5f0tP0Qy8C/mD2Tvsjx+NtS2A24qeox9eCvc2VlgnD2FyKVkanQAOqVwN6/U89LbdIAzm"
+      connection-timeout: 30000
+      maximum-pool-size: 50
+      minimum-idle: 30
+      idle-timeout: 60000
+
+# spring:
+#   datasource:
+#     hikari:
+#       driver-class-name: "org.postgresql.Driver"
+#       jdbc-url: "jdbc:postgresql://localhost:35432/ecommerce"
+#       username: "{cipher}AgCEKO6mzGaW03TJL2qMZ18P1Wue/EEaJgMmf2AOPLwNblIVkicaYBinr0H//MqqYXT7w3QLEh1nfLFYBt+ctHCOCttGNpDQMVUtdpWQcZ01iHygCBOZ8QYGjSj6DKI8ZXf0VABTfCBZZ9bkedtJh7cAEq2yi/qMv6ShRy/zrw0qTL3tbUP+xQNYYOZn5Gzh8Kj0ABhSUeOBhmvUUef1Mo8C+IffOsYHZeujX3oPzAekT8rFF1LKHhs0rmqWwAjoe79Oc+o2StoNogCxSRYqIlMGQJkO3PDLPNP/3ePzK7cDXasH3oGxDyPoZ8K6IOWP2KUrGF2Oj8JcIJoDcOmRjoCLxIkLYc6JTUcBhg0gbvadyt0SWSNwhVGS5iI87R3Z751F1N7mDBF9fpPwE0pcnLUp7tk19L6OJ3wfNEnTbxMAE+0SKbCbZDwhafGpwMzHMOKK526MHSw/39cTMMXj6YCyQ+P6quhUpsXRyYhQOAxPUd99t+PYP5NA+iyh2P7VG37sCWb9chXnWcIoDwPqkn8SPxi1VPvA6Na5j8ObBnL7F+Vdrb00Cd6kl7FsXWtfL+YmQ2PkuPwFiHDwIZW3Wao73rbL094bvfJinb/GP3BGMrZTG8qx6IuxDsSNs26A9HdxGS0ZMlTTlhKMsp3InxWPrd5fAkzzRneZBNiIKG0uPsz2Xx46hE3ra3+Vhwr/2gwC2aY5U7VXRG2ZrV5M3AeO"
+#       password: "{cipher}AgBu99X8x7pDUY5gV+7bX4jNyiirFVBQnwuAcG4BNRHzL1eJhY2NWcOk4vVgYqP3EogZoMTDeOnyCeqJOE7G6GQFHE6HyKMMi53HKP9KVi1HZmH/8RiIt+ALfEKQwoz1dyLrWAKhmB7PkMzxy8pg7nBvWWDUmVgQqkGSOXa+6rVQTgfkoFxiMkXQfOfTr3vXiUY1QJIl4wT46f596sTwGQFsvMLswXPaCY6kbBSFpXeyx/AW8JJxKkMGcVVsm7ffg10YU/Ri/AmNWf216rbKOYVA1x0QNUkgFxvZY4HOa/2tg98R4uGbqfgLC5MFYz5rPJRTJ77Uhp4vE2mPXvOlpjZxIb/jCl2q1o9F694k5kWHN7pX6BCJzpq8NXmgQJb2eDD89juyP3AKzyRTM3SdvISKatc/IaVn6ygE92zDUmrzY+iu4JWNfFxSYhMVYXwI0bp6Ed1bdBq5Hm4vpIZpl2ox1yhpxDLX/eXSfpM0FBYf2h3BbNGAm8TAz87v/AkIcktntZirU3TunTFYahxX4AgLil98c2nh/RWhy5P6woFfUSrq8he6KfcJiNAH0KCRMp1+/rez+LjP5qxoau0R+f3lNeHqKjoUVhosNIM3R5STKPC5xHJKJVW+KogkT2CfJU5xLlipuefQhk+hU5h5f0tP0Qy8C/mD2Tvsjx+NtS2A24qeox9eCvc2VlgnD2FyKVkanQAOqVwN6/U89LbdIAzm"
+#       connection-timeout: 30000
+#       maximum-pool-size: 50
+#       minimum-idle: 30
+#       idle-timeout: 60000
+
 keys:
   security:
-    # 64 bytes (512 bits) -> base64
-    # base64(hash512(cloud_ecommerce_security_secret))
-    # https://www.atatus.com/tools/sha512-to-hash
-    # https://www.atatus.com/tools/hex-to-base64
-    secret: 0eYORJ7PlWsPGBxklgxVOEpPN5p2lW6qaVvWG79WUdIFJQ+odq9OuHJemC1Vfw0V2DMzvrIr0T0iq/U475voLw==
-    # minutes
-    access_expiration_time: 60
-    refresh_expiration_time: 60 * 24 * 30
+    access:
+      # 64 bytes (512 bits) -> base64
+      secret: "{cipher}AgA3aw4PaLy6SjlPN871eplPN09BJLdyb8xOKfGdeGk50qhVaN0QDt1ozvhSH1LSQxq8Pf1kN4ogXNUAJZ4F4VaVgdRgfPpzoR6MecwLbPDKHK+4VuFuW8PYCJK+5f2rYokKVgEfE898DJgsPHY/Bx1C4j418UX+Z8JAY/IYELuLbQfE9Vm8jIYCgGlYpoDNM2zOHUPnK5wT2mS/p1PcOyXdepWBRBcQGxiesBwvx2DWUQ0q/L1LPsewDpQcndGHdXA6OO7WTF68o0NLGWXOJ+u6OHfaYAuuGBIVz9q/hy8Y1rndYdFUS9waLn71vuyRFZcqyXrJl4IuSiM2ihvhc8VGphDP8Qmq5XbTk3008IzAFh6YhPYUF4sdwjIwwqUpahUUunZ9CF3KjA2M9TscuBb1IEPy1iziy4svHiAAjGE98nFftpmKs/SPwzueLt9zTv1TXnHEomP2KNBpV9swQJv4GtRRkIhdr8Vr/m9MdNMZyNupM72z5WqKd9NFCnn9+08gY7afYugFN8cLnEkPKVznIqGhmkc02/9K9V5kdGauIfXhNyDI+/h29icRVMPzPgJnFQeTX+0PeEMd0wu2RQA59hP0kq5XsBl6GYuJQtUIeMx+8nK8E42JWvqt27iFjXckrXB4Kecr5+YRz3NRJGv5ysO3jdLzCSPdJziAy51XIpz4UcYoDqNnmNILCdVR6u6THpkyzzGCmDi8yt7ixk3akeK22V52yVGi6Y/mSEbp48O5lwqlD4/TA6Lu1I6/x/Elx7C0Kqsp0oMWQ1kyKK0DIkjzmKn2u9jtg2UslCe/tKNnxXCU6PbMMddrA5d7J3o="
+      # minutes
+      expiration_time: 60
+    refresh:
+      # 64 bytes (512 bits) -> base64
+      secret: "{cipher}AgAlpzDxW6p54qaF9ml0q+pgIRH8JNctBI4yUWaCS8P666x/A6Qhxfzb928sg7F3UkbQIb2BtumLSyofYRKWiL+JQEtqkZYrj68PKfdmrT5FZkBFMfSKus3aQtXgqg6XsYjREnJbaK4KTYXDgUoLOw90kERrFlA1ZdB5lI7y9EXMxe5D/T5LRZpp/Z5NmEW7HJzyFJvnRccZcjg+Q6ynaez8usSTSgfuGTXXaI8cFUcZrhCtVMpXrX3n2ocb8gLhNxNHipAroKqa+7DUy6rG04q9n9/8I7vBm4XugF1ktY5JlviLHhFqOM/D1ZB50n2xdEDFUGFTt6HwTQuMavZXnUCVkFTQflhCaJpE0mZIKnaDgYs3mwUZtpUGBArc1Hi1oBXe7uHFETYSkVxDrOxlfLX9RfWxYf0ggIxcjPmMvngVRLZ783FPdYYP4Iax4Xm9tkGTxOexlD1ld5la1Urz0IHpdcnQCMmfYDG+oYwDMlBlTYlNpN1Bi1QVNSTuGQ6JiD8xdE878vcpLc0hx04qDTZd8TZvKPLpPX7Wwh960nBxM7Eh5MQeLGzBfnxaQ9gHDnToJL+myq6+HdC0fVVyeHpz1OfaPtf94hl3u8Ju7jwvAamcet+y4RgEHR7iUB2SLECMeoOVkFFcvRJUgc5ex1da35SyVrYMdEWg1x5AGlxFF6JuXN/6oh7YmRzUEC7LPk3F26IuYA5Psy3L5TVjZ4xi0jb/mYd+2kI7fmdXp/i+zvc7vz/59SdNixeVsccGQ5WKAiAjgYZJXPOBF4RcCmrmOOd1JbZKOj3PwlBeYrwIoIXKpmUhB/bbc7EAayqJe7I="
+      # minutes
+      expiration_time: 60 * 24 * 30
   password:
-    # 64 bytes (512 bits) -> base64
-    # base64(hash512(cloud_ecommerce_password_secret))
-    # https://www.atatus.com/tools/sha512-to-hash
-    # https://www.atatus.com/tools/hex-to-base64
-    secret: FJ9wtPgsMMO8e+xCkuzn3vS03rMfn4+7nruvrgG2Mnq20W4E3HPzsb1hlRtkGF80GzMgKeUKr6gFg2+sW5lzew==
+    secret: "{cipher}AgBdcKqocTRJTtaobMIqLdz9GIakMbrDDHlQ6IBFV0BAoyJNaPATK2p5ZREIgUo/NQG1oJKpF0vzCeggvebbAMUgD6aosMjq55yuh9MFEm5WMaZTbECOwnCRKOEsUgNg/+2X5MJtZhjzrcL2wAVGgF/j1xpullgEFHAVWZJHDYBbrdhEcjkU5VAPw7Jpzw3XZpsRBcAwQ8aCETfj82xVSAdEYJkhjmw1ni9IJ1LnU0ui8fxO8/1LSkLGlW7HJbts+TE0WUOPmoSw2Vg2fU0AiD5H6DtBGBKqRDecP90g/dbxGhs5XNbOUSIzMqdb/xRswh9UA1M8kXayMIZPfWXYwOmpmgui3L1CV62iVJd42EjqlHLPlYroEU8xldcmLvtlq0kVxkFTNMo4hWO97cAUyrkYPzyjrzOx8bD09x5/6XR0doVnUAdp6fG8/vaB812xvxBlpDFG3GOjwSPKjWTKpiWTweUfurfYykQe6KbL/bSfr6NrSLMJ0hJEnbKJ+MRDWKWukjDY9+NSVU7U6pmu5fQiyhpZ9WQN3wi75sxcs12lreHh3/hAHxwJnh7tVSKRDC5QKhK99WLcQU6LcqRN4/09xNKlBf2wd7zmEjSL3ogMOuORFrAmHyKNJEX9FXNdolYa4MeearaJe2I9C/OhcgucJUPsaOqZ6SXByShEG4ZHslAGBwwaG56rlFFstIFRoQ/295BBieW/J1+4N3BrnRJs/cHAzbx8YPC0hjP9MnTA/MbRgGBPlIP7IDzubMt60pHk94RX11UPMSxjBkNVgA5zQXETZeCGk3teRZlzBKRp6eeEa1rEdZeWZSi0wUqvnv8="
     # iteration-count: 600000
-    iteration-count: 5000
+    iteration-count: 120000
     salt-length: 64
 
 gateway:
