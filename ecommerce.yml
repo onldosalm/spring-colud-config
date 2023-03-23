@@ -1,14 +1,12 @@
-# spring:
-#   datasource:
-#     hikari:
+spring:
+  datasource:
+    hikari:
+
 #       driver-class-name: "org.h2.Driver"
 #       jdbc-url: "jdbc:h2:mem:testdb"
 #       username: "{cipher}AgAO/8EwqS+87EMNKVfCnVONDopPRdD4czeUSMjHTLpd5JQ4oe7ntVdApMMGHOg00EERKF4zmkQhk/UrIdxqwozAda/YxkbVoiBxPYzrBFO9p+nyxVQBXaFKNuz2pq5HqTIpJMJBLAf7kyjE8hYxSXsgYa7x5xuxviEUAxOTr78czl9ykD6limiCvOllswn4u0GjYMeCsi6LCmsZ5uTJCOhQq9FA3EQst5cLBjvA1kIm8ctSbEXuXtnlXxtPu/CrociHRs/Mlf2/FnNoT8EkZdEyieSh4F05Lg8v2+qQjMWqkImP3on2esGt7L3Oa1ylJZWCmKS28Tnaku9/ubIYrRiqFk4H3WZRFSmulK1/fVKAuI9ubEQ4kjP8xadaWVQzmTfWwbyeWnX0yvOiN5gv+f8gfjR4mGwA72gBHYyt+XdGpT02HtConbr+S0I0qjIMhzF6YrJqOTEfvfF+bcmi0VXsA1k75j0mUIOtGD9EafWRhNxqtsUr3gwpWWiERi9zmcGWruZzUNK3VjHzHNyKiK/jEi3eEljIDvf4AbluwVwksxbZLSS7YrUUVTxNfQ4jGEUNWxlktmsETcmPsZpYNfezXyuMkZIJEx1QOijCB2UbqF8RIvUXFtFG1A9WaoQvqiNxPdbfltEX9Abf7F9TL6wcCcaijBuL02u3QpeIGl8kiwX7EMpKGqPPN9K2vqPoYzQR9tLEirEnhjjsmw9nhOfV"
 #       password: "{cipher}AgBu99X8x7pDUY5gV+7bX4jNyiirFVBQnwuAcG4BNRHzL1eJhY2NWcOk4vVgYqP3EogZoMTDeOnyCeqJOE7G6GQFHE6HyKMMi53HKP9KVi1HZmH/8RiIt+ALfEKQwoz1dyLrWAKhmB7PkMzxy8pg7nBvWWDUmVgQqkGSOXa+6rVQTgfkoFxiMkXQfOfTr3vXiUY1QJIl4wT46f596sTwGQFsvMLswXPaCY6kbBSFpXeyx/AW8JJxKkMGcVVsm7ffg10YU/Ri/AmNWf216rbKOYVA1x0QNUkgFxvZY4HOa/2tg98R4uGbqfgLC5MFYz5rPJRTJ77Uhp4vE2mPXvOlpjZxIb/jCl2q1o9F694k5kWHN7pX6BCJzpq8NXmgQJb2eDD89juyP3AKzyRTM3SdvISKatc/IaVn6ygE92zDUmrzY+iu4JWNfFxSYhMVYXwI0bp6Ed1bdBq5Hm4vpIZpl2ox1yhpxDLX/eXSfpM0FBYf2h3BbNGAm8TAz87v/AkIcktntZirU3TunTFYahxX4AgLil98c2nh/RWhy5P6woFfUSrq8he6KfcJiNAH0KCRMp1+/rez+LjP5qxoau0R+f3lNeHqKjoUVhosNIM3R5STKPC5xHJKJVW+KogkT2CfJU5xLlipuefQhk+hU5h5f0tP0Qy8C/mD2Tvsjx+NtS2A24qeox9eCvc2VlgnD2FyKVkanQAOqVwN6/U89LbdIAzm"
 
-spring:
-  datasource:
-    hikari:
       driver-class-name: "org.mariadb.jdbc.Driver"
       jdbc-url: "jdbc:mariadb://ecommerce-mariadb:3306/ecommerce"
       username: "{cipher}AgCGS/vLBmEYSkHEmC3OzF5NXYISPlI7xtOXK5ueG5Xkew1mk0gaF4H+noQidFmEesc3RzSaKlFW1GdQGJVXQkA2abENGundi0ToCZnuwkK7ctuZex86lZpkCKp2mZ8qrxGkW3671+vPf75M4O/1/lkhZEPyD3x/GJKj0yTuYD+KQYQ0pvPe9n7jS7G6XEhx3PsNqwGDUkbg+zYH1AqRN9eoES9gA+I7jXC1YxaQvvRXX50F8ULXUkLFVnhrchb5Eu7npiURLySYxqcimrtG1AN0yTe190zPejFNK3IKIcPc+xo7DiEg/MHa0nPJ2M5tlyfmkdeo8MDWGjCtN6+dY4E6zOizHX/+1OHiWJz9uaC68if9aa8xXprkaAsFJLziguO9n+VnWteNCLu0KIiDT+U5Tv4kA/UD4DCQS3tEn8Um5KNsVmRaCta1YUPOnqSgTV1V8SzKLvEMbc+a/9UPG4nXix/aUnqD0vT7kpTCUsC5pJJIEqNXqoKOUAzESsFifTEqBN8CviahPZGEcqs6ZiEXFMTbJwPR5QlZZ7sdPUpg55C5gvrQdTfoCyjyHN7VRirSXoilJteuUFJIzG9haTMG3hgP5ra5KpUB0wedpr+UlHl0LZDLjRYyM/Cv1bu4VE4zOwsw0JpAPIAGamgR7bsmRe87PBqPqP8UPju2QV0dbi2OFfe8hrR+hjQ5yCYgtjc5VzqUX60sDTTlaLuVYbI6"
@@ -18,9 +16,6 @@ spring:
       minimum-idle: 30
       idle-timeout: 60000
 
-# spring:
-#   datasource:
-#     hikari:
 #       driver-class-name: "org.postgresql.Driver"
 #       jdbc-url: "jdbc:postgresql://ecommerce-mariadb:35432/ecommerce"
 #       username: "{cipher}AgCEKO6mzGaW03TJL2qMZ18P1Wue/EEaJgMmf2AOPLwNblIVkicaYBinr0H//MqqYXT7w3QLEh1nfLFYBt+ctHCOCttGNpDQMVUtdpWQcZ01iHygCBOZ8QYGjSj6DKI8ZXf0VABTfCBZZ9bkedtJh7cAEq2yi/qMv6ShRy/zrw0qTL3tbUP+xQNYYOZn5Gzh8Kj0ABhSUeOBhmvUUef1Mo8C+IffOsYHZeujX3oPzAekT8rFF1LKHhs0rmqWwAjoe79Oc+o2StoNogCxSRYqIlMGQJkO3PDLPNP/3ePzK7cDXasH3oGxDyPoZ8K6IOWP2KUrGF2Oj8JcIJoDcOmRjoCLxIkLYc6JTUcBhg0gbvadyt0SWSNwhVGS5iI87R3Z751F1N7mDBF9fpPwE0pcnLUp7tk19L6OJ3wfNEnTbxMAE+0SKbCbZDwhafGpwMzHMOKK526MHSw/39cTMMXj6YCyQ+P6quhUpsXRyYhQOAxPUd99t+PYP5NA+iyh2P7VG37sCWb9chXnWcIoDwPqkn8SPxi1VPvA6Na5j8ObBnL7F+Vdrb00Cd6kl7FsXWtfL+YmQ2PkuPwFiHDwIZW3Wao73rbL094bvfJinb/GP3BGMrZTG8qx6IuxDsSNs26A9HdxGS0ZMlTTlhKMsp3InxWPrd5fAkzzRneZBNiIKG0uPsz2Xx46hE3ra3+Vhwr/2gwC2aY5U7VXRG2ZrV5M3AeO"
@@ -29,6 +24,9 @@ spring:
 #       maximum-pool-size: 50
 #       minimum-idle: 30
 #       idle-timeout: 60000
+
+  zipkin:
+    baseUrl: http://ecommerce-zipkin:9411/
 
 keys:
   security:
